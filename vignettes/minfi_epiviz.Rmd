@@ -57,7 +57,6 @@ preprocess data used in this session. The end result are objects in classes defi
 
 For this workshop we have subsetted these to chromosomes 10, 11 and 20:
 
-
 ## DMP Visualization
 
 #### Load Epiviz Workspace #1:
