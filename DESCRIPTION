@@ -1,7 +1,7 @@
 Package: workshopBioc2016
 Type: Package
 Title: Code and data for epiviz workshop at Bioc2016 conference
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
   person("Hector", "Corrada Bravo", email = "hcorrada@gmail.com", role = c("aut", "cre")),
   person("Morgan", "Walter", email="mwalter@terpmail.umd.edu", role= c("aut")),
@@ -11,4 +11,4 @@ License: MIT + file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
 Depends: epivizr (>= 2.3.4), minfi (>= 1.18.2)
-Suggests: knitr, rmarkdown, GenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, doParallel, IlluminaHumanMethylation450kanno.ilmn12.hg19
+Suggests: knitr, rmarkdown, GenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, doParallel, IlluminaHumanMethylation450kanno.ilmn12.hg19, AnnotationHub

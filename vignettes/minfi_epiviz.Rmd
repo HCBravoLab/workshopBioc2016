@@ -366,6 +366,12 @@ slideshow_regions <- hypo_gene_blocks[o,] * .5
 app$slideshow(slideshow_regions)
 ```
 
+## On your own
+
+1) Add a heatmap of CpG methylation values for the clustered regions used in the `blockFinder` function. Hint: add
+object `cl$object` as a data source, then use the `visualize` for `HeatmapPlot`.
+
+2) Add tracks or plots for objects loaded through `AnnotationHub`.
 
 ## References
 
