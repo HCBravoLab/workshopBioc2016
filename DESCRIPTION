@@ -1,7 +1,7 @@
 Package: workshopBioc2016
 Type: Package
 Title: Code and data for epiviz workshop at Bioc2016 conference
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
   person("Hector", "Corrada Bravo", email = "hcorrada@gmail.com", role = c("aut", "cre")),
   person("Morgan", "Walter", email="mwalter@terpmail.umd.edu", role= c("aut")),
