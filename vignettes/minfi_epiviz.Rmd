@@ -56,6 +56,7 @@ GenomicMethylSet       | `ratioConvert`         | GenomicRatioSet  |
 For this workshop we have subsetted these to chromosomes 10, 11 and 20:
 
 ```{r}
+library(workshopBioc2016)
 data(meth_set)
 data(gm_set)
 data(gratio_set)
