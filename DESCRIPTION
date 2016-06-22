@@ -11,4 +11,4 @@ License: MIT + file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
 Depends: epivizr (>= 2.3.4), minfi (>= 1.18.2)
-Suggests: knitr, rmarkdown, GenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, doParallel
+Suggests: knitr, rmarkdown, GenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, doParallel, IlluminaHumanMethylation450kanno.ilmn12.hg19
