@@ -289,7 +289,7 @@ We now have an RGChannelSet that was created from reading the downloaded IDAT fi
 
 Data Input             | Processing Function    | Output           | Analytic Use
 ---------------------- | ---------------------- | ---------------- | --------------------------
-Raw data (IDAT files)  | read.450k.exp()        | RGChannelSet     | output of reading data   
+Raw data (IDAT files)  | read.metharray()        | RGChannelSet     | output of reading data   
 RGChannelSet           | preprocessIllumina()   | MethylSet        | dmpFinder method
 MethylSet              | mapToGenome()          | GenomicMethylSet | blockFinder method
 GenomicMethylSet       | ratioConvert()         | GenomicRatioSet  | bumphunter method
