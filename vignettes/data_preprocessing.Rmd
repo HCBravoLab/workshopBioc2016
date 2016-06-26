@@ -18,25 +18,25 @@ knitr::opts_chunk$set(echo = TRUE)
 When selecting the data, be sure to choose only the samples that end in 01 (TCGA-..-....-01) for solid tissue tumor types and samples that end in 11 (TCGA-..-....-11) for solid tissue normal types. For each cancer type, once the correct settings are selected, click the "Build Archive" button and then download the data. The settings used for the data matrix page and the specific TCGA samples chosen are shown in the following screenshots:
 
 BRCA normal - Filter Settings  
-![BRCA download settings](images/brca_mat.png)
-  
+![BRCA download settings](images/brca_mat.PNG)
+
 BRCA normal - Samples   
-![BRCA-normal chosen samples](images/brca_norm_dat.png)       
-  
+![BRCA-normal chosen samples](images/brca_norm_dat.PNG)       
+
 BRCA tumor - Samples  
-![BRCA-tumor chosen samples](images/brca_tum_dat.png)    
-  
+![BRCA-tumor chosen samples](images/brca_tum_dat.PNG)    
+
 COAD normal - Filter Settings  
-![COAD download settings](images/coad_mat.png)      
-  
+![COAD download settings](images/coad_mat.PNG)      
+
 COAD normal - Samples  
-![COAD-normal chosen samples](images/coad_norm_dat.png)  
-  
+![COAD-normal chosen samples](images/coad_norm_dat.PNG)  
+
 LUSC normal - Filter Settings  
-![LUSC download settings](images/lusc_mat.png)  
-  
+![LUSC download settings](images/lusc_mat.PNG)  
+
 LUSC normal - Samples  
-![LUSC-normal chosen samples](images/lusc_norm_dat.png)  
+![LUSC-normal chosen samples](images/lusc_norm_dat.PNG)  
 
 After unzipping the files that are sent to the email of your choice, save each cancer type (BRCA, COAD, LUSC) as different folders under a new directory, like "datadir" shown below. You will need to update the path to the files.
 
@@ -184,7 +184,7 @@ rm(list=objs)
 
 nms <- names(colon_targets)
 targets.colon <- colon_targets[nms]
- 
+
 targets.colon$Status <- factor(ifelse(targets.colon$sample_type==
   "Primary Tumor","cancer","normal"),levels=c("normal","cancer"))
 targets.colon$Tissue <- tolower(targets.colon$patient.tumor_tissue_site)
