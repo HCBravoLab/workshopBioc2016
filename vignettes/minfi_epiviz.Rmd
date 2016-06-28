@@ -48,7 +48,7 @@ preprocess data used in this workshop. The end result are objects in classes def
 
 Data Input             | Processing Function    | Output           | 
 ---------------------- | ---------------------- | ---------------- | 
-Raw data (IDAT files)  | `read.450k.exp`        | RGChannelSet     | 
+Raw data (IDAT files)  | `read.metharray`       | RGChannelSet     | 
 RGChannelSet           | `preprocessIllumina`   | MethylSet        | 
 MethylSet              | `mapToGenome`          | GenomicMethylSet | 
 GenomicMethylSet       | `ratioConvert`         | GenomicRatioSet  | 
