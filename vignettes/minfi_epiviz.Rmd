@@ -70,31 +70,39 @@ gratio_set
 
 ### Epiviz workspaces and hosted data
 
-For this analysis we will display our analysis data along with contextual data hosted on
-servers at the University of Maryland including gene annotation, CpG Island locations and gene expression from the Gene Expression Barcode project. These pre-existing workspaces are similar to those from Timp et al. in 2014 that included visualizations of large hypo-methylated blocks^2^ available at [http//epiviz.github.io/timp2014](http//epiviz.github.io/timp2014). We'll start by exploring a couple of those to get a sense of the type of visualizations and analyses we can perform.
+For this analysis we will display our analysis data along with contextual including gene annotation, CpG Island locations and gene expression from the Gene Expression Barcode project. We will setup workspaces similar to those from Timp et al. in 2014 that included visualizations of large hypo-methylated blocks^2^ available at [http//epiviz.github.io/timp2014](http//epiviz.github.io/timp2014). We'll start by exploring a couple of those to get a sense of the type of visualizations and analyses we can perform.
 
-We have created workspaces you can use for this workshop. Of course, you can also create your own following these steps:
+To start our visualization workspace we will add a gene annotation track for the hg19 reference, a track with CpG islands obtained from UCSC using the `AnnotationHub` resource, and a heatmap with expression from the gene expression barcode project.
 
-* Open the epiviz app [http://epiviz.cbcb.umd.edu](http://epiviz.cbcb.umd.edu)   
-* Login into the app (you can use one of a number of authentication options)
-* Add the genes track, CpG Islands track, and gene expression heatmap
-* Type the chosen name of the workspace in space that reads "Save Workspace Name" and click "Save Workspace" button
+Let's start the application with hg19 as the reference for genes track. Setting `use_viewer_option=TRUE` makes the epiviz application run within the RStudio viewer pane if available. 
 
-Your workspace will now be saved under your account and will be accessible by others as the URL is specific to each workspace (e.g. `http://epiviz.cbcb.umd.edu/?ws=<workspace_id>`). The final workspace should look similar to this:
+```{r, eval=FALSE}
+library(epivizrStandalone)
+library(Homo.sapiens)
+
+app <- startStandalone(Homo.sapiens, keep_seqlevels=paste0("chr",c(10,11,20)), chr="chr11", use_viewer_option=TRUE, port=7345)
+```
+
+Now, let's add the CpG island track included in this package.
+
+```{r, eval=FALSE}
+data(cgi_gr)
+cgi_track <- app$plot(cgi_gr, datasource_name="CpG Islands")
+```
+
+Now, let's add a heatmap with the gene expression barcode data
+
+```{r, eval=FALSE}
+data(bcode_eset)
+bcode_ms <- app$data_mgr$add_measurements(bcode_eset, "Gene Expression Barcode")
+bcode_hmap <- app$chart_mgr$visualize("HeatmapPlot", datasource=bcode_ms)
+```
+
+The final workspace should look similar to this:
 
 ![Starting Epiviz Workspace](images/startdmp.png)  
 
-### Starting epivizr session 
-
-We can now start an epiviz connection to the workspace with hosted data to which we can
-add plots as we do our analysis. Start the epiviz workspace we provide (or the one you created yourself) 
-
-```{r,eval=F}
-library(epivizr)
-app <- startEpiviz(workspace="kr0MpYk4g0u",try_ports=TRUE)
-```
-
-If you created your own workspace, provide it's id as the `workspace` argument.
+### The epivizr session 
 
 The `app` object serves as the interface between your R session and the epiviz
 interactive visualization application. We can use it to obtain information about 
