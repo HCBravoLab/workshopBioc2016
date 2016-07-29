@@ -10,5 +10,5 @@ Description: This workshop provides an overview of interactive visualization too
 License: MIT + file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
-Depends: epivizr (>= 2.2.3), minfi (>= 1.18.2)
-Suggests: knitr, rmarkdown, GenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, doParallel, IlluminaHumanMethylation450kanno.ilmn12.hg19, AnnotationHub
+Depends: epivizrStandalone (>= 1.1.7), epivizr (>= 2.3.6), minfi (>= 1.18.2)
+Suggests: knitr, rmarkdown, GenomicFeatures, Homo.sapiens, hgu133plus2.db, doParallel, IlluminaHumanMethylation450kanno.ilmn12.hg19, AnnotationHub
