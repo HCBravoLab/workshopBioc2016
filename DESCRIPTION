@@ -6,9 +6,29 @@ Authors@R: c(
   person("Hector", "Corrada Bravo", email = "hcorrada@gmail.com", role = c("aut", "cre")),
   person("Morgan", "Walter", email="mlwalter@terpmail.umd.edu", role= c("aut")),
   person("Jayaram", "Kancherla", email="jkanche@umiacs.umd.edu", role=c("aut")))
-Description: This workshop provides an overview of interactive visualization tools available through epivizr. It will be centered around analysis of epigenetic data using Bioconductor tools and annotation packages. After completion participants will be expected to be able to setup interactive visualization sessions through R, load data from diverse R / Bioconductor objects, including those provided by annotation infrastructure, interact with data using patterns provided by the epiviz user interface, and write scripts that can reproduce interactive visualization analyses. Some familiarity with Bioconductor infrastructure recommended.
+Description: This workshop provides an overview of interactive visualization
+    tools available through epivizr. It will be centered around analysis of
+    epigenetic data using Bioconductor tools and annotation packages. After
+    completion participants will be expected to be able to setup interactive
+    visualization sessions through R, load data from diverse R / Bioconductor
+    objects, including those provided by annotation infrastructure, interact with
+    data using patterns provided by the epiviz user interface, and write scripts
+    that can reproduce interactive visualization analyses. Some familiarity with
+    Bioconductor infrastructure recommended.
 License: MIT + file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
-Depends: epivizrStandalone (>= 1.1.7), epivizr (>= 2.3.6), minfi (>= 1.18.2)
-Suggests: knitr, rmarkdown, GenomicFeatures, Homo.sapiens, hgu133plus2.db, doParallel, IlluminaHumanMethylation450kanno.ilmn12.hg19, AnnotationHub
+Depends:
+    epivizrStandalone (>= 1.1.7),
+    epivizr (>= 2.3.6),
+    minfi (>= 1.18.2)
+Suggests:
+    knitr,
+    rmarkdown,
+    GenomicFeatures,
+    Homo.sapiens,
+    hgu133plus2.db,
+    doParallel,
+    IlluminaHumanMethylation450kanno.ilmn12.hg19,
+    AnnotationHub
+RoxygenNote: 5.0.1
