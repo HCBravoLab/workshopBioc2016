@@ -4,12 +4,12 @@
 \name{gratio_set}
 \alias{gratio_set}
 \title{Methylation data from TCGA mapped to genomic location in ratio format}
-\format{A \code{\link{GenomicRatioSet}} object}
+\format{A \code{\link[minfi]{GenomicRatioSet}} object}
 \usage{
 gratio_set
 }
 \value{
-A \code{\link{GenomicRatioSet}} object with TCGA methylation data
+A \code{\link[minfi]{GenomicRatioSet}} object with TCGA methylation data
 }
 \description{
 See vignette `data_preprocessing` for code to build this object.

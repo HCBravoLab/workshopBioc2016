@@ -4,12 +4,12 @@
 \name{gm_set}
 \alias{gm_set}
 \title{Methylation data from TCGA mapped to genomic location}
-\format{An \code{\link{GenomicMethylSet}} object}
+\format{An \code{\link[minfi]{GenomicMethylSet}} object}
 \usage{
 gm_set
 }
 \value{
-A \code{\link{GenomicMethylSet}} object with TCGA methylation data
+A \code{\link[minfi]{GenomicMethylSet}} object with TCGA methylation data
 }
 \description{
 See vignette `data_preprocessing` for code to build this object.

@@ -4,12 +4,12 @@
 \name{bcode_eset}
 \alias{bcode_eset}
 \title{Example expression data from the Gene Expression barcode project}
-\format{An \code{\link{ExpressionSet}} object}
+\format{An \code{\link[Biobase]{ExpressionSet}} object}
 \usage{
 bcode_eset
 }
 \value{
-A \code{\link{ExpressionSet}} object with gene expression barcode data
+A \code{\link[Biobase]{ExpressionSet}} object with gene expression barcode data
 }
 \description{
 See vignette `data_preprocessing` for code to build this object.

@@ -4,12 +4,12 @@
 \name{meth_set}
 \alias{meth_set}
 \title{Methylation data from TCGA}
-\format{A \code{\link{MethylSet}} object}
+\format{A \code{\link[minfi]{MethylSet}} object}
 \usage{
 meth_set
 }
 \value{
-A \code{\link{MethylSet}} object
+A \code{\link[minfi]{MethylSet}} object
 }
 \description{
 See vignette `data_preprocessing` for code to build this object.

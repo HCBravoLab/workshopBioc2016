@@ -19,12 +19,14 @@ License: MIT + file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
 Depends:
-    epivizrStandalone (>= 1.1.7),
-    epivizr (>= 2.3.6),
-    minfi (>= 1.18.2)
+    R (>= 3.0.0)
 Suggests:
+    epivizrStandalone (>= 1.1.7),
+    minfi (>= 1.18.2),
     knitr,
     rmarkdown,
+    Biobase,
+    GenomicRanges,
     GenomicFeatures,
     Homo.sapiens,
     hgu133plus2.db,

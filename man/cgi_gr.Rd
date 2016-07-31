@@ -4,12 +4,12 @@
 \name{cgi_gr}
 \alias{cgi_gr}
 \title{Locations of CpG Islands}
-\format{A \code{\link{GRanges}} object}
+\format{A \code{\link[GenomicRanges]{GRanges}} object}
 \usage{
 cgi_gr
 }
 \value{
-A \code{\link{GRanges}} object with locations of CpG Islands
+A \code{\link[GenomicRanges]{GRanges}} object with locations of CpG Islands
 }
 \description{
 Locations of CpG Islands
